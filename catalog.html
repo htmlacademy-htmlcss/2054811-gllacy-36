@@ -57,7 +57,7 @@
         <li class="bread-crumbs-item">
           <a class="bread-crumbs-link current">Сливочное мороженое</a>
         </li>
-      </щ>
+      </ol>
       <h2 class="bread-crumbs-title">Сливочное мороженое</h2>
     </header>
     <section class="filter">
@@ -66,83 +66,65 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Сортировка</legend>
-          <label class="control" >Сортировка:
-            <select class="select-control" aria-label="Сортировка">
+            <select class="select-control" name="cataloselect">
               <option value="popular">По популярности</option>
               <option value="cheap">Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
-          </label>
         </fieldset>
-
         <fieldset class="catalog-filter-group">
-        </fieldset>
-
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Цена</legend>
-          <label>Цена: 100 ₽ – 500 ₽</label>
+          <label>Цена:</label>
+          <input type="text" value="100" name="min">₽ –
+          <input type="text" value="500" name="max">₽
+          <div class="range-container">
+            <div class="range-scale">
+              <div class="buttons-range"></div>
+              <button class="btn-range-handle btn-range-handle-min">
+                <span class="visually-hidden">Установить минимальную цену </span>
+              </button>
+              <button class="btn-range-handle btn-range-handle-max">
+                <span class="visually-hidden">Установить минимальную цену </span>
+              </button>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Жирность</legend>
-            <p class="control-text">Жирность: </p>
-            <ul class="catalog-filter-list">
 
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="fat-content" value="0%">
-                    0%
-                </label>
-              </li>
-
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="fat-content" value="до 10%" checked>
-                  до 10%
-                </label>
-              </li>
-
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="fat-content" value="до 30%">
-                  до 30%
-                </label>
-              </li>
-
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="fat-content" value="выше 30%">
-                  выше 30%
-                </label>
-              </li>
-            </ul>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label for="zero-fat" class="control">0%</label>
+                <input class="control-input" type="radio" name="fat-content" id="zero-fat" value="0%">
+            </li>
+            <li class="catalog-filter-item">
+              <label  for="ten-fat" class="control">до 10%</label>
+                <input class="control-input" type="radio" name="fat-content" id="ten-fat" value="до 10%" checked>
+            </li>
+            <li class="catalog-filter-item">
+              <label for="thirty-fat" class="control">до 30%</label>
+                <input class="control-input" type="radio" name="fat-content" id="thirty-fat" value="до 30%">
+            </li>
+            <li class="catalog-filter-item">
+              <label for="more-fat" class="control"> выше 30% </label>
+                <input class="control-input" type="radio" name="fat-content" id="more-fat" value="выше 30%">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset>
           <legend class="catalog-filter-title">Наполнители</legend>
-          <p class="control-text">Наполнители</p>
-          <label class="control">
-            <input  class="control-input" type="checkbox" name="chocolate"  checked>
-            шоколадные
-          </label>
-          <label class="control">
-            <input  class="control-input" type="checkbox" name="sugar-sprinkles" >
-            сахарные посыпки
-          </label>
-          <label class="control">
-            <input  class="control-input" type="checkbox" name="fruits" >
-            фрукты
-          </label>
-          <label class="control">
-            <input  class="control-input" type="checkbox" name="syrups" >
-            сиропы
-          </label>
-          <label class="control">
-            <input  class="control-input" type="checkbox" name="jams" >
-            джемы
-          </label>
+          <label for="chocolate" class="control">шоколадные </label>
+            <input  class="control-input" type="checkbox" name="chocolate" id="chocolate" checked>
+          <label for="sugar-sprinkles" class="control">сахарные посыпки</label>
+            <input  class="control-input" type="checkbox" id="sugar-sprinkles" name="sugar-sprinkles" >
+          <label for="fruits" class="control">фрукты</label>
+            <input  class="control-input" type="checkbox" id="fruits" name="fruits" >
+          <label for="syrups" class="control">сиропы</label>
+            <input  class="control-input" type="checkbox" id="syrups" name="syrups" >
+          <label for="jams" class="control">джемы</label>
+            <input  class="control-input" type="checkbox" id="jams" name="jams" >
         </fieldset>
-
         <button class="button" type="submit">Применить</button>
       </form>
     </section>
@@ -174,7 +156,7 @@
           </li>
           <li class="catalog-item">
             <a href="#" class="catalog-item-link">
-              <img src="images/icecream-catalog/ice-cream-3.jpg" alt="фото Крем-брюле с черничным джемом." class="catalog-img" width="168px" height="168px">
+              <img src="images/icecream-catalog/ice-cream-3.jpg" alt="фото Крем-брюле с черничным джемом." class="catalog-img" width="168" height="168">
               <h3 class="catalog-item-title">Черника</h3>
             </a >
             <p class="catalog-item-desc">Крем-брюле с черничным джемом</p>
@@ -283,7 +265,7 @@
             </a>
           </li>
         </ul>
-        <button class="button pagination-show-more">Показать еще</button>
+        <a href="#" class="button pagination-show-more">Показать еще</a>
         <ul class="pagination">
           <li class="pagination-item">
               <a class="pagination-link pagination-current"> 1</a>
@@ -330,10 +312,18 @@
       <section class="footer-documents">
         <h2 class="visually-hidden">Документы</h2>
         <ul class="footer-documents-list">
-          <li class="footer-documents-item current">Для поставщиков</li>
-          <li class="footer-documents-item">О производстве</li>
-          <li class="footer-documents-item">Наши документы</li>
-          <li class="footer-documents-item">Экологические стандарты</li>
+          <li class="footer-documents-item current">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-documents-item">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="footer-documents-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="footer-documents-item">
+            <a href="#">Экологические стандарты</a>
+          </li>
         </ul>
       </section >
       <section class="footer-about">
