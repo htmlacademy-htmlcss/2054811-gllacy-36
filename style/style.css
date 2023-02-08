@@ -510,3 +510,36 @@ body {
   color: #565C66;
   margin: 0;
 }
+
+/* footer */
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-documents-list {
+  list-style: none;
+}
+
+.footer-documents-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer-documents-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-documents-link {
+  font-size: 14px;
+  line-height: 20px;
+}
