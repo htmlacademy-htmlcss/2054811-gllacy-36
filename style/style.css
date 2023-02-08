@@ -478,7 +478,6 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .contact-text {
@@ -542,4 +541,56 @@ body {
 .footer-documents-link {
   font-size: 14px;
   line-height: 20px;
+}
+
+/* catalog */
+.bread-crumbs-list {
+  list-style: none;
+  display: flex;
+}
+
+.bread-crumbs-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bread-crumbs-item .current {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  display: flex;
+}
+
+.catalog-filter-group {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+/* catalog-pagination */
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 57px;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pagination-current {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #FCFCFC;
+  border-radius: 50%;
+  text-align: center;
 }
