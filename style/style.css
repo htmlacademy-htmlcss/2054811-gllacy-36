@@ -55,6 +55,8 @@ body {
   text-decoration: none;
   color: #2D3440;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #FCFCFC;
   padding: 12px 32px;
   border: 4px solid rgba(252, 252, 252, 0.4);
@@ -91,8 +93,15 @@ body {
   line-height: 20px;
 }
 
+.navigation-left {
+  display: flex;
+  margin-right: auto;
+}
+
 .logo-wrapper {
-  margin-top: 55px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 16px;
 }
 
 .navigation-list {
@@ -102,7 +111,6 @@ body {
   flex-wrap: wrap;
   display: flex;
   align-items: flex-start;
-  padding-top: 65px;
   /*чтоб не росло при переполении*/
   list-style: none;
 }
@@ -115,12 +123,13 @@ body {
   display: flex;
   align-items: flex-start;
   column-gap: 16px;
-  padding-top: 68px;
+  margin-top: 33px;
   list-style: none;
 }
 
 .navigation-item {
   padding: 8px 16px;
+  margin-top: 33px;
 }
 
 .navigation-link {
@@ -135,7 +144,6 @@ body {
 .navigation-user-link {
   text-decoration: none;
   color: #2D3440;
-
 }
 
 .navigation-link-tel {
@@ -196,26 +204,35 @@ body {
 }
 
 /* main  slider*/
+.slider {
+  margin-bottom: 80px;
+}
+
 .slider-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
+  align-items: center;
+  padding-left: 70px;
 }
 
 .slider-item {
   display: flex;
-  align-items: center;
-  padding-left: 68px;
 }
 
 .slider-item-active .slider-text-wrapper {
   display: block;
 }
 
+.slider-item:not(.slider-item-active) {
+  margin-left: 75px;
+}
+
 .slider-text-wrapper {
   display: none;
   width: 470px;
+  padding-top: 136px;
 }
 
 .slider-title {
@@ -223,9 +240,8 @@ body {
   font-size: 36px;
   line-height: 46px;
   letter-spacing: -0.07em;
-  padding-top: 47px;
   margin: 0;
-
+  margin-bottom: 24px;
 }
 
 .slider-desc {
@@ -235,6 +251,7 @@ body {
   letter-spacing: 0.04em;
   padding-top: 5px;
   margin: 0;
+  margin-bottom: 48px;
 }
 
 .slider-img-wrapper {
@@ -242,17 +259,36 @@ body {
   height: 150px;
   opacity: 0.4;
   margin: 0 auto;
+  position: relative;
 }
 
+
 .slider-item-active .slider-img-wrapper {
-  width: 312px;
+  width: 327px;
   height: 507px;
   opacity: 1;
+  padding-top: 21px;
 }
 
 .slider-img {
   width: 100%;
   height: auto;
+}
+
+.pink-bg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #FFCBD8;
+  opacity: 0.4;
+  border-radius: 50%;
+  left: calc(50% - 100px/2);
+  top: calc(50% - 100px/2);
+}
+
+.button-white {
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .slider-link {
@@ -261,12 +297,23 @@ body {
 }
 
 .slider-pagination-button {
+  position: relative;
   border: 2px solid;
   color: #fff;
   border-radius: 50%;
   background: transparent;
   width: 38px;
   height: 38px;
+}
+
+.slider-preview {
+  left: 530px;
+  top: -275px;
+}
+
+.slider-nex {
+  left: 811px;
+  top: -275px;
 }
 
 .slider-pagination {
@@ -306,11 +353,10 @@ body {
 /* free-gifts section */
 .free-gifts {
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 81px;
 }
 
 .free-gifts-title {
-  padding-top: 83px;
   margin: 0 auto;
   font-weight: 900;
   font-size: 32px;
@@ -320,7 +366,6 @@ body {
 }
 
 .free-gift-list {
-
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -359,7 +404,7 @@ body {
 
 /* catalog */
 .catalog {
-  margin-bottom: 158px;
+  margin-bottom: 80px;
 }
 
 .catalog-title {
@@ -433,7 +478,7 @@ body {
   background: url("../images/сео-bg.jpg") repeat;
   border-radius: 16px;
   padding: 22px;
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 }
 
 .about-wrapper {
@@ -461,8 +506,6 @@ body {
   gap: 40px 35px;
 }
 
-.about-item {}
-
 .about-item-desc {
   margin: 0;
   padding-left: 88px;
@@ -471,7 +514,7 @@ body {
 .new-mail-wrapper {
   display: flex;
   column-gap: 30px;
-  margin-bottom: 81px;
+  margin-bottom: 80px;
 }
 
 /* newsletter */
@@ -498,7 +541,6 @@ body {
   width: 200px;
   margin: 0;
   line-height: 20px;
-
 }
 
 /* mailing */
@@ -506,40 +548,34 @@ body {
   width: 570px;
   border-radius: 16px;
   background: url("../images/subscription.jpg") no-repeat;
-  padding: 5px;
+  padding: 6px;
 }
 
 .mailing-wrapper-white {
   background: #FFFFFF;
   border-radius: 16px;
-
+  padding: 26px;
 }
 
 .mailing-text {
   margin: 0;
   width: 506px;
-  padding: 17px;
-  margin-bottom: 35px;
+  margin-bottom: 42px;
 }
 
 .mailing-form {
   width: 506px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .button-red {
   display: block;
   text-decoration: none;
   color: #FCFCFC;
-  font-weight: 700;
-  border-radius: 26px;
   padding: 12px 32px;
   background: #FF2F64;
-  border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-
 }
 
 .input-mail {
@@ -549,76 +585,122 @@ body {
   padding-right: 160px;
   padding-left: 16px;
   border: #B9B9B9 1px solid;
+  margin-right: 18px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
 }
 
 /* delivery */
 .delivery {
-  /* width: 1170px; */
   background: url("../images/delivery.jpg") no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   padding-left: 102px;
   border-radius: 16px;
+  margin-bottom: 80px;
+  padding-right: 64px;
+}
+
+.delivery-form-input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  column-gap: 16px;
+  row-gap: 20px;
 }
 
 .delivery-about {
   width: 371px;
-
+  margin-right: 135px;
+  margin-top: 165px;
 }
 
 .delivery-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
-  width: 356px;
+  width: 365px;
   margin: 0;
   padding: 0;
   text-align: left;
+  margin-bottom: 24px;
 }
 
 .delivery-text {
   margin: 0;
+  margin-bottom: 163px;
+  font-size: 16px;
+  line-height: 22px;
 }
-
-
 
 .delivery-form {
   background-color: #FCFCFC;
   width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 133px;
+  margin-top: 64px;
+  padding: 40px;
 }
 
-/* .delivery-form-date,
-.delivery-form-tel,
+.delivery-form .button-red {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 42px;
+}
+
+.delivery-form input {
+  padding: 14px 16px;
+  display: block;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.delivery-form label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.delivery-form-date {
+  width: 117px;
+}
+
+.delivery-form-text {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.delivery-form-tel {
+  width: 287px;
+}
+
 .delivery-form-address {
-  display: flex;
-  flex-direction: column;
-} */
+  width: 420px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.delivery-data {
+  display: block;
+}
 
 /* contact */
 .contact {
   width: 1170px;
-
   background: url("../images/feedback.jpg") no-repeat;
   display: flex;
   border-radius: 16px;
   padding-left: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .contact-wrapper {
   background-color: #FCFCFC;
   width: 343px;
-
   padding: 40px;
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
+  box-sizing: border-box;
 }
 
 .contact-text {
@@ -628,14 +710,20 @@ body {
 }
 
 .contact-button {
-  align-self: center;
+  display: inline;
+  margin-bottom: 40px;
 }
 
 .contact-address {
-  font-size: 20px;
   font-weight: 700;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 24px;
   font-style: normal;
+}
+
+.contact-tel {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .tel {
@@ -649,12 +737,18 @@ body {
 .contact-time {
   color: #565C66;
   margin: 0;
+  margin-bottom: 32px;
 }
 
 /* footer */
 .main-footer {
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
+}
+
+.footer-documents {
+  width: 332px;
 }
 
 .footer-documents-list {
@@ -664,6 +758,8 @@ body {
 .footer-documents-link {
   text-decoration: none;
   color: inherit;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .about-text {
@@ -673,15 +769,25 @@ body {
 
 .footer-documents-list {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 150px 185px;
   column-gap: 24px;
   margin: 0;
   padding: 0;
 }
 
+.footer-documents-list .current {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .footer-documents-link {
   font-size: 14px;
   line-height: 20px;
+}
+
+.htmlacademy-link {
+  color: inherit;
 }
 
 /* catalog */
