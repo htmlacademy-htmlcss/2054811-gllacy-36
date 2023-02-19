@@ -857,12 +857,38 @@ body {
   display: flex;
 }
 
-.checkbox {
-  background-color: #fcfcfc;
+.btn-range-handle {
+  width: 16px;
+  height: 16px;
+  background: #2D3440;
+  border-radius: 50%;
+  border: 1px solid #2D3440;
   ;
 }
 
-.catalog-filter-group {}
+.catalog-filter-list-checkbox,
+.catalog-filter-list-radio,
+.select-control,
+.buttons-range {
+  background-color: rgba(252, 252, 252, 0.3);
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 9px 24px;
+  gap: 16px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
+
+.pink-button {
+  padding: 8px 53px;
+  color: #2d3440;
+  background: rgba(252, 252, 252, 0.3);
+  /* basic/extra-light */
+
+  border: 2px solid #fcfcfc;
+  border-radius: 20px;
+}
 
 /* catalog-pagination */
 .pagination-wrapper {

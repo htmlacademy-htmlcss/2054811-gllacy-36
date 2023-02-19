@@ -93,6 +93,7 @@
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <form action="https://echo.htmlacademy.ru" class="catalog-filter" method="get">
             <fieldset class="catalog-filter-group">
+              <!-- select -->
               <legend class="catalog-filter-title">Сортировка</legend>
               <select class="select-control" name="cataloselect">
                 <option value="popular">По популярности</option>
@@ -100,6 +101,7 @@
                 <option value="expensive">Сначала дорогое</option>
               </select>
             </fieldset>
+            <!-- range  -->
             <fieldset class="catalog-filter-group">
               <label>Цена:</label>
               <input type="text" value="100" name="min">₽ –
@@ -107,6 +109,7 @@
               <div class="range-container">
                 <div class="range-scale">
                   <div class="buttons-range"></div>
+                  <!-- range-button  -->
                   <button class="btn-range-handle btn-range-handle-min">
                     <span class="visually-hidden">Установить минимальную цену </span>
                   </button>
@@ -116,41 +119,56 @@
                 </div>
               </div>
             </fieldset>
+
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность</legend>
-              <ul class="catalog-filter-list">
+              <!-- radio  -->
+              <ul class="catalog-filter-list-radio">
                 <li class="catalog-filter-item">
-                  <label for="zero-fat" class="control">0%</label>
                   <input class="control-input" type="radio" name="fat-content" id="zero-fat" value="0%">
+                  <label for="zero-fat" class="control">0%</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label for="ten-fat" class="control">до 10%</label>
                   <input class="control-input" type="radio" name="fat-content" id="ten-fat" value="до 10%" checked>
+                  <label for="ten-fat" class="control">до 10%</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label for="thirty-fat" class="control">до 30%</label>
                   <input class="control-input" type="radio" name="fat-content" id="thirty-fat" value="до 30%">
+                  <label for="thirty-fat" class="control">до 30%</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label for="more-fat" class="control"> выше 30% </label>
                   <input class="control-input" type="radio" name="fat-content" id="more-fat" value="выше 30%">
+                  <label for="more-fat" class="control"> выше 30% </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="checkbox">
+            <fieldset class=>
               <legend class="catalog-filter-title">Наполнители</legend>
-              <label for="chocolate" class="control">шоколадные </label>
-              <input class="control-input" type="checkbox" name="chocolate" id="chocolate" checked>
-              <label for="sugar-sprinkles" class="control">сахарные посыпки</label>
-              <input class="control-input" type="checkbox" id="sugar-sprinkles" name="sugar-sprinkles">
-              <label for="fruits" class="control">фрукты</label>
-              <input class="control-input" type="checkbox" id="fruits" name="fruits">
-              <label for="syrups" class="control">сиропы</label>
-              <input class="control-input" type="checkbox" id="syrups" name="syrups">
-              <label for="jams" class="control">джемы</label>
-              <input class="control-input" type="checkbox" id="jams" name="jams">
+              <!-- checkbox  -->
+              <ul class="catalog-filter-list-checkbox">
+                <li class="checkbox-item">
+                  <input class="control-input" type="checkbox" name="chocolate" id="chocolate" checked>
+                  <label for="chocolate" class="control">шоколадные </label>
+                </li>
+                <li class="checkbox-item">
+                  <input class="control-input" type="checkbox" id="sugar-sprinkles" name="sugar-sprinkles">
+                  <label for="sugar-sprinkles" class="control">сахарные посыпки</label>
+                </li>
+                <li class="checkbox-item">
+                  <input class="control-input" type="checkbox" id="fruits" name="fruits">
+                </li>
+                <label for="fruits" class="control">фрукты</label>
+                <li class="checkbox-item">
+                  <input class="control-input" type="checkbox" id="syrups" name="syrups">
+                </li>
+                <label for="syrups" class="control">сиропы</label>
+                <li class="checkbox-item">
+                  <input class="control-input" type="checkbox" id="jams" name="jams">
+                </li>
+                <label for="jams" class="control">джемы</label>
+              </ul>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
+            <button class="button pink-button" type="submit">Применить</button>
           </form>
         </section>
         <!-- catalog -->
