@@ -575,6 +575,11 @@ body {
   padding-bottom: 68px;
 }
 
+.news-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*переполнение??? */
 .news-title {
   width: 303px;
@@ -812,7 +817,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between; */
   display: grid;
-  grid-template-columns: 367px 436px 368pxf;
+  grid-template-columns: 367px 436px 368px;
   row-gap: 10px;
   padding-top: 46px;
 }
