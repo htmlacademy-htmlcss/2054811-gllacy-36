@@ -91,17 +91,16 @@ body {
   justify-content: space-between;
   width: 100%;
   line-height: 20px;
+  margin-bottom: 24px;
 }
 
 .navigation-left {
   display: flex;
   margin-right: auto;
-
 }
 
 .logo-wrapper {
   margin-top: 24px;
-  margin-bottom: 24px;
   margin-right: 16px;
 }
 
@@ -176,7 +175,6 @@ body {
   border-radius: 30px;
   font-size: 14px;
   line-height: 20px;
-
 }
 
 .navigation-link-login,
@@ -200,9 +198,6 @@ body {
   padding-right: 8.33px;
 }
 
-.navigation-link-login {}
-
-.navigation-link-cart {}
 
 /* main  slider*/
 .slider {
@@ -264,14 +259,6 @@ body {
   margin-top: 32px;
 }
 
-/* костыль ??? */
-/* .slider-img-wrapper .second {
-  padding-top: 16px;
-  width: 93px;
-  height: 144px;
-  margin-left: 19px;
-} */
-
 .slider-item-active .slider-img-wrapper {
   width: 333px;
   height: 504px;
@@ -292,7 +279,6 @@ body {
 .slider-link {
   text-decoration: none;
   color: #2D3440;
-
 }
 
 .slider-pagination-button {
@@ -342,7 +328,6 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .social-items {
@@ -358,7 +343,6 @@ body {
 .free-gifts {
   width: 100%;
   margin-bottom: 81px;
-
 }
 
 .free-gifts-title {
@@ -368,7 +352,6 @@ body {
   line-height: 46px;
   text-align: center;
   margin-bottom: 55px;
-
 }
 
 .free-gift-list {
@@ -473,7 +456,6 @@ body {
   width: 270px;
   border-radius: 8px;
   background-color: #fcfcfc;
-  /* padding: 133px 40px 28px 40px; */
 }
 
 .catalog-item-title {
@@ -813,9 +795,6 @@ body {
 
 /* footer */
 .main-footer {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: 367px 436px 368px;
   row-gap: 10px;
@@ -828,7 +807,6 @@ body {
 
 .footer-documents-list {
   list-style: none;
-
 }
 
 .footer-documents-link {
