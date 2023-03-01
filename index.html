@@ -21,7 +21,22 @@
             <!-- navigation item -->
             <ul class="navigation-list">
               <li class="navigation-item navigation-item-select">
-                <a href="catalog.html" class="navigation-link">Каталог</a>
+                <select name="catalog" class="catalog-select">
+                  <option value="">Каталог</option>
+                  <optgroup label="Новинки"></optgroup>
+                  <option value="cream">Сливочное</option>
+                  <option value="sherbrt">Щербеты</option>
+                  <option value="fruct">Фруктовый лед</option>
+                  <option value="merorin">Мелорин</option>
+
+                </select>
+                <a href="catalog.html" class="navigation-link"></a>
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                  fill="none" viewBox="0 0 16 17">
+                  <path fill="#2D3440" fill-rule="evenodd"
+                    d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z"
+                    clip-rule="evenodd" />
+                </svg>
               </li>
               <li class="navigation-item">
                 <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
@@ -40,11 +55,11 @@
             </li>
             <li class="navigation-user-item navigation-item-search">
               <a href="#" class="navigation-user-link">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                  fill="none">
-                  <path fill="#2D3440" fill-rule="evenodd"
-                    d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
-                    clip-rule="evenodd" />
+                <svg aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
+                    fill="currentColor" />
                 </svg>
                 <span class="visually-hidden">Поиск </span>
               </a>
@@ -61,8 +76,6 @@
               </a>
             </li>
             <li class="navigation-user-item navigation-item-cart">
-
-
               <a href="#" class="navigation-user-link navigation-link-cart">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   fill="none" viewBox="0 0 15 14">
@@ -271,7 +284,7 @@
                   class="catalog-img" width="168" height="168">
                 <h3 class="catalog-item-title">Черника</h3>
               </a>
-              <p class="catalog-item-desc">Крем-брюле с черничным джемом</p>
+              <p class="catalog-item-desc">Крем-брюле с&nbsp;черничным джемом</p>
               <div class="catalog-item-wrapper">
 
                 <p class="catalog-item-price">330 ₽/кг</p>
@@ -288,11 +301,11 @@
             <li class="catalog-item">
               <div class="helper-white"></div>
               <a href="#" class="catalog-item-link">
-                <img src="images/icecream-catalog/ice-cream-4.jpg" alt="фото Ванильного пломбира со сладкой посыпкой."
-                  class="catalog-img" width="168" height="168">
+                <img src="images/icecream-catalog/ice-cream-4.jpg"
+                  alt="фото Ванильного пломбира со&nbspсладкой посыпкой." class="catalog-img" width="168" height="168">
                 <h3 class="catalog-item-title">Бабл-гам</h3>
               </a>
-              <p class="catalog-item-desc">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="catalog-item-desc">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               <div class="catalog-item-wrapper">
                 <p class="catalog-item-price">320 ₽/кг</p>
                 <a href="#" class="catalog-item-button">
@@ -320,7 +333,8 @@
                   современного оборудования и проверенных временем технологий.</p>
               </li>
               <li class="about-item">
-                <p class="about-item-desc">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
+                <p class="about-item-desc">Закупка ингредиентов производится только у&nbsp;проверенных фермерских
+                  хозяйств, с
                   которыми нас&nbsp;связывает долговременное сотрудничество.</p>
               </li>
 
@@ -343,7 +357,7 @@
             <h2 class="visually-hidden">Новости</h2>
             <a href="#" class="news-link">
               <p class="news-text">Новое в нашем блоге</p>
-              <h3 class="news-title">10 способов сервировки фруктовых щербетов к столу</h3>
+              <h3 class="news-title">10 способов сервировки фруктовых щербетов к&nbsp;столу</h3>
             </a>
           </section>
           <!-- mailing -->
@@ -351,8 +365,8 @@
             <div class="mailing-wrapper-white">
               <h2 class="visually-hidden">Рассылка</h2>
               <div class="mailing-wrapper">
-                <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
-                  вкусного,что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого
+                  вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
                   <input type="email" name="mailing-email" id="mailing-email" placeholder="email@example.com"
                     class="input-mail" required>
@@ -479,6 +493,9 @@
             2021</p>
         </section>
       </footer>
+    </div>
+    <div class="test">
+
     </div>
   </body>
 
