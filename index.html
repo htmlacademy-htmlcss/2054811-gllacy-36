@@ -64,8 +64,8 @@
                 <span class="visually-hidden">Телефон</span>
               </a>
             </li>
-            <li class="navigation-user-item navigation-item-search">
-              <a href="#" class="navigation-user-link">
+            <li class="navigation-user-item navigation-item-search ">
+              <a href="#" class="navigation-user-link  navigation-user-link-search">
                 <svg aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -74,11 +74,11 @@
                 </svg>
                 <span class="visually-hidden">Поиск </span>
               </a>
+              <form class="block-search">
+                <input class='block-search-input' type="text" placeholder="Поиск по сайту">
+              </form>
             </li>
-            <form class="block-search">
-              <input class='block-search-input' type="text">
 
-            </form>
             <li class="navigation-user-item navigation-item-login">
               <a href="#" class="navigation-user-link navigation-link-login">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
@@ -94,11 +94,46 @@
               <a href="#" class="navigation-user-link navigation-link-cart">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   fill="none" viewBox="0 0 15 14">
-                  <path fill="#2D3440" fill-rule="evenodd"
+                  <path fill="currentColor" fill-rule="evenodd"
                     d="M1.17.1a.67.67 0 1 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.65a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>2 товара</a>
               <span class="visually-hidden">Корзина </span>
+              <div class="block-cart">
+                <p class="block-cart-title">Корзина</p>
+                <ul class="block-cart-list">
+                  <li class="block-cart-item">
+                    <img src="./images/icecream-catalog/ice-cream-1.jpg" alt="малинка" class="block-cart-img "
+                      width="46" height="46">
+                    <div class="block-cart-wrapper">
+                      <p class="block-cart-desc">Малинка</p>
+                      <p class="block-cart-sum">1 кг х 310 ₽</p>
+                    </div>
+                    <span class="block-cart-price">310 ₽</span>
+                    <button class="block-cart-close"></button>
+                  </li>
+                  <li class="block-cart-item">
+                    <img src="./images/icecream-catalog/ice-cream-4.jpg" alt="Бабл-гам" class="block-cart-img "
+                      width="46" height="46">
+                    <div class="block-cart-wrapper">
+                      <p class="block-cart-desc">Бабл-гам</p>
+                      <p class="block-cart-sum">1,5 кг х 320 ₽</p>
+                    </div>
+                    <span class="block-cart-price">480 ₽</span>
+                    <button class="block-cart-close"></button>
+                  </li>
+
+                </ul>
+                <div class="total-wrapper">
+
+                  <button class="button button-red" type="submit">Оформить заказ</button>
+                  <span class="block-carr-total">Итого: 790 ₽</span>
+                </div>
+
+
+
+
+              </div>
             </li>
           </ul>
         </nav>
