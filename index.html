@@ -21,22 +21,33 @@
             <!-- navigation item -->
             <ul class="navigation-list">
               <li class="navigation-item navigation-item-select">
-                <select name="catalog" class="catalog-select">
-                  <option value="">Каталог</option>
-                  <optgroup label="Новинки"></optgroup>
-                  <option value="cream">Сливочное</option>
-                  <option value="sherbrt">Щербеты</option>
-                  <option value="fruct">Фруктовый лед</option>
-                  <option value="merorin">Мелорин</option>
-
-                </select>
-                <a href="catalog.html" class="navigation-link"></a>
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                  fill="none" viewBox="0 0 16 17">
-                  <path fill="#2D3440" fill-rule="evenodd"
-                    d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z"
-                    clip-rule="evenodd" />
-                </svg>
+                <a href="catalog.html" class="navigation-link navigation-link-select ">
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17">
+                    <path fill-rule="evenodd"
+                      d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z"
+                      clip-rule="evenodd" />
+                  </svg> Каталог
+                </a>
+                <div class="block-select">
+                  <ul class="block-list-select">
+                    <li class="block-item-select">
+                      <a href="#" class="block-link-select select-title">Новинки</a>
+                    </li>
+                    <li class="block-item-select">
+                      <a href="" class="block-link-select">Сливочное </a>
+                    </li>
+                    <li class="block-item-select">
+                      <a href="#" class="block-link-select">Щербеты</a>
+                    </li>
+                    <li class="block-item-select">
+                      <a href="#" class="block-link-select">Фруктовый лед</a>
+                    </li>
+                    <li class="block-item-select">
+                      <a href="#" class="block-link-select"> Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="navigation-item">
                 <a href="delivery.html" class="navigation-link">Доставка и оплата</a>
@@ -64,6 +75,10 @@
                 <span class="visually-hidden">Поиск </span>
               </a>
             </li>
+            <form class="block-search">
+              <input class='block-search-input' type="text">
+
+            </form>
             <li class="navigation-user-item navigation-item-login">
               <a href="#" class="navigation-user-link navigation-link-login">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
@@ -159,23 +174,23 @@
           <div class="wrapper">
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current bullet" type="button">
+                <button class=" bullet bullet-active" type="button">
                   <span class="visually-hidden">1 слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button bullet" type="button">
+                <button class=" bullet" type="button">
                   <span class="visually-hidden">2 слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button bullet" type="button">
+                <button class="bullet" type="button">
                   <span class="visually-hidden">3 слайд</span>
                 </button>
               </li>
             </ol>
             <!-- social list -->
-            <ul class="social-list">
+            <ul class="social-list-top">
               <li class="social-items">
                 <a href="https://t.me/htmlacademy" class="social-link">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -328,23 +343,28 @@
             <ul class="about-list">
 
               <li class="about-item">
-                <p class="about-item-desc">Всё наше мороженое изготавливается на собственном производстве с
+                <p class="about-item-desc about-item-desc-icecream">Всё наше мороженое изготавливается на собственном
+                  производстве с
                   использованием
                   современного оборудования и проверенных временем технологий.</p>
               </li>
               <li class="about-item">
-                <p class="about-item-desc">Закупка ингредиентов производится только у&nbsp;проверенных фермерских
+                <p class="about-item-desc about-item-desc-leaf">Закупка ингредиентов производится только
+                  у&nbsp;проверенных
+                  фермерских
                   хозяйств, с
                   которыми нас&nbsp;связывает долговременное сотрудничество.</p>
               </li>
 
               <li class="about-item">
-                <p class="about-item-desc">Для приготовления мороженого используются сливки и молоко высочайшего
+                <p class="about-item-desc about-item-desc-cow">Для приготовления мороженого используются сливки и молоко
+                  высочайшего
                   качества.
                   Все ингредиенты и&nbsp;добавки произведены из натурального сырья.</p>
               </li>
               <li class="about-item">
-                <p class="about-item-desc">Доставка нашего мороженого осуществляется в специальном термопаке, который не
+                <p class="about-item-desc about-item-des-temp">Доставка нашего мороженого осуществляется в специальном
+                  термопаке, который не
                   даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
               </li>
             </ul>
@@ -494,9 +514,7 @@
         </section>
       </footer>
     </div>
-    <div class="test">
-
-    </div>
+    <script src="./script/app.js"></script>
   </body>
 
 </html>
