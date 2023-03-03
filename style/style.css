@@ -321,12 +321,9 @@ body {
   order: 1;
 }
 
-
-
 .navigation-user-item:not(.navigation-link-tel) .navigation-user-link {
   position: relative;
 }
-
 
 .navigation-user-item SVG {
   margin-right: 8px;
@@ -341,13 +338,14 @@ body {
   display: block;
 }
 
-
 .navigation-item-login {
+
   background-color: rgba(252, 252, 252, 0.3);
   padding: 6px 18px;
   border-radius: 30px;
   font-size: 14px;
   line-height: 20px;
+  position: relative;
 }
 
 .navigation-link-login {
@@ -355,6 +353,73 @@ body {
   align-items: center;
 }
 
+/* block-login  */
+.block-login {
+  display: none;
+  width: 420px;
+  position: absolute;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  right: -3px;
+  bottom: -7px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  padding: 48px;
+  z-index: 1;
+}
+
+.navigation-item-login--open {
+  display: block;
+  background-color: #ff4d79;
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.navigation-item-login--open .block-login {
+  display: block;
+}
+
+.navigation-item-login--open .navigation-link-login svg,
+.navigation-item-login--open .navigation-link-login {
+  color: #fcfcfc;
+}
+
+.block-login-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.block-login-email,
+.block-login-password {
+  display: block;
+  width: 283px;
+  padding: 14px 16px;
+  background: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.block-login-email::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.block-login-wrapper {
+  display: flex;
+  column-gap: 23px;
+}
+
+.block-login-wrapper a {
+  color: #2D3440;
+}
 
 .navigation-link-cart {
   position: relative;
@@ -390,7 +455,6 @@ body {
   right: 1px;
   z-index: 1;
   box-sizing: border-box;
-
 }
 
 .navigation-item-cart--open .block-cart {

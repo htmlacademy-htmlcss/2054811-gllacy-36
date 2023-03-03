@@ -12,4 +12,9 @@ document.querySelector('.navigation-item-cart').addEventListener('click', functi
   // e.preventDefault();//no reloading page
   document.querySelector('.navigation-item-cart').classList.toggle('navigation-item-cart--open');
 
-})
+});
+document.querySelector('.navigation-item-login').addEventListener('click', function (e) {
+  // e.preventDefault();//no reloading page
+  document.querySelector('.navigation-item-login').classList.toggle('navigation-item-login--open');
+
+});
