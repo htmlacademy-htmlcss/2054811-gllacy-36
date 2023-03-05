@@ -901,62 +901,68 @@ body {
   background-color: #fcfcfc;
   border-radius: 16px;
   padding: 56px 17px;
+
+
 }
 
 .about-title {
-  width: 997px;
   margin: 0 auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin-bottom: 54px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
 .about-list {
+  width: 1042px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 505px 505px;
-  gap: 37px 34px;
+  gap: 39px 34px;
 }
 
 .about-item {
-  width: 530px;
-  padding-top: 3px;
+  padding-left: 63px;
+}
+
+.about-item::before {
+  position: absolute;
+  content: "";
+  width: 43px;
+  height: 43px;
+  left: 0;
+  top: 0;
+  border: 2px solid #2D3440;
+  border-radius: 50%;
+}
+
+.about-item {
+  position: relative;
+  margin: 0;
 }
 
 .about-item-desc {
-  position: relative;
   margin: 0;
-  padding-left: 88px;
-
 }
 
-.about-item-desc::before {
 
-  content: url(" ../images/circle.svg");
-  width: 48px;
-  height: 48px;
-  left: 10px;
+.about-item-icecream::before {
+  background: url("../images/ice-cream.svg") no-repeat center center;
 }
 
-.about-item-desc-icecream::before {
-  background: url("../images/ice-cream.svg") no-repeat;
-  position: absolute;
+.about-item-leaf::before {
+  background: url("../images/leaf.svg") no-repeat center center;
 }
 
-.about-item-desc-leaf::before {
-  background: url("../images/leaf.svg") no-repeat;
+.about-item-cow::before {
+  background: url("../images/cow.svg") no-repeat center center;
 }
 
-.about-item-desc-cow::before {
-  background: url("../images/cow.svg") no-repeat;
-}
-
-.about-item-desc-temp::before {
-  background: url("../images/thermometer.svg") no-repeat;
+.about-item-temp::before {
+  background: url("../images/thermometer.svg") no-repeat center center;
 }
 
 .new-mail-wrapper {
