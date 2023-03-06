@@ -5,7 +5,7 @@ document.querySelector('.navigation-link-select').addEventListener('click', func
 });
 document.querySelector('.navigation-user-link-search').addEventListener('click', function (e) {
   // e.preventDefault();//no reloading page
-  document.querySelector('.navigation-item-search').classList.toggle('navigation-item-search--open');
+  document.querySelector('.navigation-user-item-search').classList.toggle('navigation-user-item-search--open');
 
 });
 document.querySelector('.navigation-item-cart').addEventListener('click', function (e) {
@@ -18,3 +18,5 @@ document.querySelector('.navigation-item-login').addEventListener('click', funct
   document.querySelector('.navigation-item-login').classList.toggle('navigation-item-login--open');
 
 });
+// navigation - user - item navigation - user - item - search navigation - user - item - search--open
+// navigation - user - item navigation - user - item - search navigation - user - item - search--open
