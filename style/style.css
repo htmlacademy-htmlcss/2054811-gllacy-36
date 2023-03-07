@@ -106,31 +106,33 @@ body {
 
 .button-red:hover {
   background: rgba(252, 252, 252, 0.3);
-  border: 4px solid #FF2F64;
+  outline: 4px solid #FF2F64;
+  color: #2D3440;
 }
 
 .button-red:focus {
   background: #FF2F64;
-  /* basic/extra-dark */
+
 
   border: 2px solid #2D3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  border-radius: 26px;
-}
-
-.bu:disabled {
-  background: #B9B9B9;
-  border: 4px solid rgba(185, 185, 185, 0.3);
   border-radius: 26px;
 }
 
 .button-red:active {
   background: #FEAFC3;
-  /* basic/extra-dark */
-
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  padding: 14px 34px;
 }
+
+.button-red:disabled {
+  background: #B9B9B9;
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+  border-radius: 26px;
+}
+
+
 
 .visually-hidden {
   position: absolute;
@@ -348,7 +350,7 @@ body {
 .block-search {
   position: absolute;
   width: 356px;
-  background: #FCFCFC;
+  background: #fcfcfc;
   border-radius: 4px;
   display: none;
   box-sizing: border-box;
@@ -356,11 +358,15 @@ body {
   bottom: -8px;
   right: 1px;
   z-index: 1;
+  padding: 24px 16px;
 }
 
 .block-search-input {
   width: 324px;
   height: 48px;
+  background: #fff;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px#b9b9b9
 }
 
 .navigation-user-item-search--open .block-search {
@@ -604,8 +610,8 @@ body {
 .navigation-item-login--open .navigation-link-login {
   color: #fcfcfc;
   background-color: #ff4d78;
-  /* outline: none;
-  border: none; */
+  outline: none;
+  border: none;
 }
 
 .navigation-item-login--open .navigation-link-login:hover {
@@ -622,6 +628,7 @@ body {
   background: rgb(255, 74, 120, 0.3);
   color: #fcfcfc;
   outline: none;
+  border: none;
 }
 
 /* cart block  */

@@ -18,5 +18,3 @@ document.querySelector('.navigation-item-login').addEventListener('click', funct
   document.querySelector('.navigation-item-login').classList.toggle('navigation-item-login--open');
 
 });
-// navigation - user - item navigation - user - item - search navigation - user - item - search--open
-// navigation - user - item navigation - user - item - search navigation - user - item - search--open
