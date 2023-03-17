@@ -32,18 +32,18 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #2d3440;
-
-}
-
-.slider-pink {
   background-color: #feafc3;
 }
 
-.slider-blue {
+.slider-1 {
+  background-color: #feafc3;
+}
+
+.slider-2 {
   background: #69a9ff;
 }
 
-.slider-yellow {
+.slider-3 {
   background: #fcc850;
 }
 
@@ -478,8 +478,13 @@ a.button-white:disabled {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap: 21px;
-  margin-left: -6px;
+  column-gap: 22px;
+}
+
+.block-login-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
 }
 
 .block-login-link {
@@ -691,7 +696,6 @@ a.button-white:disabled {
   right: 1px;
   z-index: 1;
   display: none;
-
 }
 
 .block-empty-card-title {
@@ -751,7 +755,7 @@ a.button-white:disabled {
 }
 
 .slider-item:not(.slider-item-active) {
-  margin-left: 61px;
+  margin-left: 57px;
 }
 
 .slider-item:last-child:not(.slider-item-active) {
@@ -2249,6 +2253,7 @@ a.button-white:disabled {
   background: rgba(252, 252, 252, 0.3);
   outline: 1px solid #2d3440;
   border-radius: 50px;
+  box-shadow: none;
 }
 
 .pagination-show-more {
