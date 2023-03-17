@@ -75,8 +75,9 @@
                 </svg>
                 <span class="visually-hidden">Поиск </span>
               </a>
-              <form class="block-search" action="https://echo.htmlacademy.ru" method="get">
-                <input class='block-search-input' type="text" placeholder="Поиск по сайту">
+              <form class="block-search">
+                <label for="search-input" class="visually-hidden">Поиск по сайту</label>
+                <input class='block-search-input' type="text" placeholder="Поиск по сайту" id="search-input">
               </form>
             </li>
             <li class="navigation-user-item navigation-item-login">
@@ -89,19 +90,22 @@
                 </svg>
                 Вход
               </a>
-              <forma class="block-login" action="https://echo.htmlacademy.ru" method="get">
+              <form class="block-login" action="https://echo.htmlacademy.ru" method="post">
                 <p class="block-login-title">Личный кабинет</p>
-                <input class="block-login-email" type="email" name="email" required placeholder="email@example.com">
-                <input class="block-login-password" type="password" name="password" required placeholder="......">
+                <label for="block-login-email" class="visually-hidden">Почта</label>
+                <input class="block-login-email" type="email" name="email" required placeholder="email@example.com"
+                  id="block-login-email">
+                <label for="block-login-password" class="visually-hidden">Почта</label>
+                <input class="block-login-password" type="password" name="password" required placeholder="....."
+                  id="block-login-password">
                 <div class="block-login-wrapper">
-                  <button class="button button-red">Войти</button>
+                  <button class="button">Войти</button>
                   <div class="block-login-link-wrapper">
-                    <a href="#" class="block-login-link"> Забыли пароль?</a>
-                    <a href="#" class="block-login-link">Регистрация</a>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
                   </div>
                 </div>
-
-              </forma>
+              </form>
             </li>
             <li class="navigation-user-item navigation-item-cart">
               <a href="#" class="navigation-user-link navigation-link-cart">
@@ -115,15 +119,16 @@
               <div class="block-empty-card">
                 <h2 class="block-empty-card-title">Ваша корзина пока пуста</h2>
               </div>
-              <div class="block-cart">
+              <form class="block-cart" action="https://echo.htmlacademy.ru" method="get">
                 <p class="block-cart-title">Корзина</p>
                 <ul class="block-cart-list">
                   <li class="block-cart-item">
-                    <img src="./images/icecream-catalog/ice-cream-1.jpg" alt="малинка" class="block-cart-img "
-                      width="46" height="46">
+                    <img src="./images/catalog/ice-cream-1.jpg" alt="малинка" class="block-cart-img " width="46"
+                      height="46">
                     <div class="block-cart-wrapper">
                       <p class="block-cart-desc">Малинка</p>
                       <p class="block-cart-sum">1 кг х 310 ₽</p>
+                      <input type="hidden" name="goods-item" value="Малинка 1 кг х 310 ₽">
                     </div>
                     <span class="block-cart-price">310 ₽</span>
                     <button class="block-cart-close">
@@ -131,11 +136,12 @@
                     </button>
                   </li>
                   <li class="block-cart-item">
-                    <img src="./images/icecream-catalog/ice-cream-4.jpg" alt="Бабл-гам" class="block-cart-img "
-                      width="46" height="46">
+                    <img src="./images/catalog/ice-cream-4.jpg" alt="Бабл-гам" class="block-cart-img " width="46"
+                      height="46">
                     <div class="block-cart-wrapper">
                       <p class="block-cart-desc">Бабл-гам</p>
                       <p class="block-cart-sum">1,5 кг х 320 ₽</p>
+                      <input type="hidden" name="goods-item" value="Бабл-гам 1,5 кг х 320 ₽">
                     </div>
                     <span class="block-cart-price">480 ₽</span>
                     <button class="block-cart-close">
@@ -144,11 +150,10 @@
                   </li>
                 </ul>
                 <div class="total-wrapper">
-
                   <button class="button" type="submit">Оформить заказ</button>
                   <span class="block-cart-total">Итого: 790 ₽</span>
                 </div>
-              </div>
+              </form>
             </li>
           </ul>
         </nav>
@@ -184,10 +189,8 @@
                   width="66" height="150">
               </div>
             </li>
-
             <li class="slider-item">
               <div class="slider-text-wrapper">
-
                 <h3 class="slider-title">Карамельный пломбир с маршмеллоу</h3>
                 <p class="slider-desc">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
                   сердца
@@ -210,7 +213,7 @@
             </svg>
             <span class="visually-hidden">Открыть предыдуший экран слайдера</span>
           </button>
-          <button class="slider-pagination-button slider-nex" type="button">
+          <button class="slider-pagination-button slider-next" type="button">
             <svg aria-hidden="true" focusable="false" role="img" width="7" height="12" viewBox="0 0 7 12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -285,22 +288,16 @@
           <h2 class="free-gifts-title">Заказывайте мороженое<br>и получайте подарки!</h2>
           <ul class="free-gift-list">
             <li class="free-gift-item raspberry">
-              <div class="free-gift-item-wrapper ">
-                <h3 class="free-gift-subtitle">Малинка даром! </h3>
-                <p class="free-gift-desc">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
-                  малинового варенья бесплатно.</p>
-                <a href="#" class="free-gift-button button-white">Хочу подарок</a>
-              </div>
+              <h3 class="free-gift-subtitle">Малинка даром! </h3>
+              <p class="free-gift-desc">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
+                малинового варенья бесплатно.</p>
+              <a href="#" class="free-gift-button button-white">Хочу подарок</a>
             </li>
-
             <li class="free-gift-item marshmallow">
-              <div class="free-gift-item-wrapper ">
-                <h3 class="free-gift-subtitle">Маршмеллоу даром!</h3>
-                <p class="free-gift-desc">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок
-                  совершенно бесплатно.</p>
-
-                <a href="#" class="free-gift-button button-white">Хочу подарок</a>
-              </div>
+              <h3 class="free-gift-subtitle">Маршмеллоу даром!</h3>
+              <p class="free-gift-desc">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок
+                совершенно бесплатно.</p>
+              <a href="#" class="free-gift-button button-white">Хочу подарок</a>
             </li>
           </ul>
         </section>
@@ -310,7 +307,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <a href="#" class="catalog-item-link">
-                <img src="images/icecream-catalog/ice-cream-1.jpg" alt="фото Сливочного мороженого." class="catalog-img"
+                <img src="images/catalog/ice-cream-1.jpg" alt="фото Сливочного мороженого." class="catalog-img"
                   width="168" height="168">
                 <h3 class="catalog-item-title">Малинка</h3>
               </a>
@@ -329,9 +326,8 @@
               </div>
             </li>
             <li class="catalog-item">
-
               <a href="#" class="catalog-item-link">
-                <img src="images/icecream-catalog/ice-cream-2.jpg" alt="фото Фисташкого мороженого." class="catalog-img"
+                <img src="images/catalog/ice-cream-2.jpg" alt="фото Фисташкого мороженого." class="catalog-img"
                   width="168" height="168">
                 <h3 class="catalog-item-title">Фисташка</h3>
               </a>
@@ -350,10 +346,9 @@
               </div>
             </li>
             <li class="catalog-item">
-
               <a href="#" class="catalog-item-link">
-                <img src="images/icecream-catalog/ice-cream-3.jpg" alt="фото Крем-брюле с черничным джемом."
-                  class="catalog-img" width="168" height="168">
+                <img src="images/catalog/ice-cream-3.jpg" alt="фото Крем-брюле с черничным джемом." class="catalog-img"
+                  width="168" height="168">
                 <h3 class="catalog-item-title">Черника</h3>
               </a>
               <p class="catalog-item-desc">Крем-брюле с&nbsp;черничным джемом</p>
@@ -373,8 +368,8 @@
             </li>
             <li class="catalog-item">
               <a href="#" class="catalog-item-link">
-                <img src="images/icecream-catalog/ice-cream-4.jpg"
-                  alt="фото Ванильного пломбира со&nbspсладкой посыпкой." class="catalog-img" width="168" height="168">
+                <img src="images/catalog/ice-cream-4.jpg" alt="фото Ванильного пломбира со сладкой посыпкой."
+                  class="catalog-img" width="168" height="168">
                 <h3 class="catalog-item-title">Бабл-гам</h3>
               </a>
               <p class="catalog-item-desc">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
@@ -442,15 +437,14 @@
           <section class="mailing">
             <div class="mailing-wrapper-white">
               <h2 class="visually-hidden">Рассылка</h2>
-              <div class="mailing-wrapper">
-                <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого
-                  вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input type="email" name="mailing-email" id="mailing-email" placeholder="email@example.com"
-                    class="input-mail" required>
-                  <button class="submit  button">Отправить</button>
-                </form>
-              </div>
+              <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого
+                вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
+                <label for="mailing-email" class="visually-hidden">Почта</label>
+                <input type="email" name="mailing-email" id="mailing-email" placeholder="email@example.com"
+                  class="input-mail input" required>
+                <button class="submit  button">Отправить</button>
+              </form>
             </div>
           </section>
         </div>
@@ -479,11 +473,11 @@
                           clip-rule="evenodd" />
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date"> Укажите желаемую дату и время  доставки </span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date"> Укажите желаемую дату и время
+                      доставки </span>
                   </div>
-
                 </div>
-                <input type="text" name="  delivery-form-date" id="delivery-data" placeholder="01.04.2020"
+                <input type="text" name="delivery-form-date" id="delivery-date" placeholder="01.04.2020"
                   class="input input-date" required>
               </div>
               <div class="delivery-form-tel">
@@ -633,7 +627,6 @@
         </section>
       </div>
     </div>
-
     <script src="./script/app.js"></script>
   </body>
 
